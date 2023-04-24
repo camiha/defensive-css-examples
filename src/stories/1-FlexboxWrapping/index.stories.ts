@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { FlexboxWrapping } from "./index";
 
 const meta = {
-  title: "DefensiveCSS/1.FlexboxWrapping",
+  title: "DefensiveCSS/1-FlexboxWrapping",
   component: FlexboxWrapping,
   tags: ["autodocs"],
 } satisfies Meta<typeof FlexboxWrapping>;
