@@ -1,4 +1,4 @@
-export const colorConfig = {
+const colorConfig = {
   primary: "#0A4D68",
   secondary: "#088395",
   tertiary: "#05BFDB",
@@ -7,8 +7,12 @@ export const colorConfig = {
   light: "#eeeeee",
 } as const;
 
-export const marginConfig = {
-  sm: 8,
-  md: 16,
-  lg: 32,
+export const cc = colorConfig;
+
+const marginConfig = {
+  sm: "1rem",
+  md: "2rem",
+  lg: "3rem",
 } as const;
+
+export const mc = marginConfig;
