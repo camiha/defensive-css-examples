@@ -5,12 +5,12 @@ const Card = () => {
   return (
     <div
       css={css`
-        padding: 1rem;
+        padding: ${mc.sm};
         display: flex;
         flex-direction: column;
         background-color: ${cc.primary};
         color: ${cc.light};
-        gap: 0.5rem;
+        gap: ${mc.xs};
         max-width: 20rem;
         min-width: 15rem;
       `}
