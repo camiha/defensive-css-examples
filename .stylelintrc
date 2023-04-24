@@ -1,0 +1,18 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "rules": {
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreKeywords": ["/.*/"]
+      }
+    ],
+    "function-no-unknown": null
+  },
+  "overrides": [
+    {
+      "files": ["*.{js,ts,jsx,tsx}", "**/*.{js,ts,jsx,tsx}"],
+      "customSyntax": "@stylelint/postcss-css-in-js"
+    }
+  ]
+}
