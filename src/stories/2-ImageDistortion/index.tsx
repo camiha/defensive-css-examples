@@ -1,5 +1,6 @@
 import { cc, mc } from "../../styles/styleConfig";
 import { css } from "@emotion/react";
+import imageFile from "../../../public/img/image-distortion-img.png";
 
 export const ImageDistortion = ({
   hasObjectFit,
@@ -27,7 +28,7 @@ export const ImageDistortion = ({
           }
         `}
       >
-        <img src="/public/img/image-distortion-img.png" alt="" />
+        <img src={imageFile} alt="" />
       </div>
       <p
         css={css`
