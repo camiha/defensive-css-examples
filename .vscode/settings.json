@@ -46,5 +46,8 @@
       "source.fixAll.stylelint": true
     }
   },
-  "cSpell.words": []
+  "cSpell.words": [
+    "autodocs",
+    "Flexbox"
+  ]
 }
