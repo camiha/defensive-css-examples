@@ -47,8 +47,8 @@ export const FlexboxWrapping = ({
         flex-wrap: ${isWrap ? "wrap" : "nowrap"};
       `}
     >
-      {[...Array(count)].map(() => (
-        <Card />
+      {[...Array(count)].map((_, i) => (
+        <Card key={i} />
       ))}
     </div>
   );
