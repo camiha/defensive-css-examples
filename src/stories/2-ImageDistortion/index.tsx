@@ -3,8 +3,10 @@ import { css } from "@emotion/react";
 import imageFile from "../../../public/img/image-distortion-img.png";
 
 export const ImageDistortion = ({
+  height,
   hasObjectFit,
 }: {
+  height: number;
   hasObjectFit: boolean;
 }) => {
   return (
@@ -18,7 +20,7 @@ export const ImageDistortion = ({
       <div
         css={css`
           > img {
-            height: 20rem;
+            height: ${height}rem;
             width: 100%;
 
             ${hasObjectFit &&

@@ -12,6 +12,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
+    height: 10,
     hasObjectFit: false,
   },
 };
