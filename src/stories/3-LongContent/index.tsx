@@ -64,9 +64,9 @@ export const LongContent = ({
         flex-direction: column;
       `}
     >
+      <Item text="text string test string" textOverflow={textOverflow} />
       <Item text={text} textOverflow={textOverflow} />
-      <Item text={text} textOverflow={textOverflow} />
-      <Item text={text} textOverflow={textOverflow} />
+      <Item text="text string test string" textOverflow={textOverflow} />
     </div>
   );
 };

@@ -12,7 +12,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    text: "text string test string test string",
+    text: "long text long text long text long text long text long text long text ",
     textOverflow: false,
   },
 };
