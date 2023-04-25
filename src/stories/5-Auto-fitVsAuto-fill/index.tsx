@@ -26,7 +26,13 @@ const Card = () => {
   );
 };
 
-export const Auto_fitVsAuto_fill = ({ isFit }: { isFit: boolean }) => {
+export const Auto_fitVsAuto_fill = ({
+  count,
+  isFit,
+}: {
+  count: number;
+  isFit: boolean;
+}) => {
   return (
     <div
       css={css`
@@ -48,26 +54,9 @@ export const Auto_fitVsAuto_fill = ({ isFit }: { isFit: boolean }) => {
               `}
         `}
       >
-        <Card />
-        <Card />
-        <Card />
-      </div>
-      <div
-        css={css`
-          display: grid;
-          grid-gap: ${mc.sm};
-          margin-top: ${mc.md};
-
-          ${isFit
-            ? css`
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-              `
-            : css`
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-              `}
-        `}
-      >
-        <Card />
+        {[...Array(count)].map((_, i) => (
+          <Card key={i} />
+        ))}
       </div>
     </div>
   );
