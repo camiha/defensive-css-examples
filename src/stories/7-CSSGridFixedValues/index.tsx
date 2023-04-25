@@ -39,12 +39,12 @@ export const CSSGridFixedValues = ({ hasMQ }: { hasMQ: boolean }) => {
 
           ${hasMQ
             ? css`
-                @media (min-width: 600px) {
-                  grid-template-columns: 250px 1fr;
+                @media (min-width: 800px) {
+                  grid-template-columns: 400px 1fr;
                 }
               `
             : css`
-                grid-template-columns: 250px 1fr;
+                grid-template-columns: 400px 1fr;
               `}
         `}
       >
