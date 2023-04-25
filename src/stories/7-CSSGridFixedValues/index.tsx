@@ -24,7 +24,11 @@ const Card = ({ title }: { title: string }) => {
     </div>
   );
 };
-export const CSSGridFixedValues = ({ hasMQ }: { hasMQ: boolean }) => {
+export const CSSGridFixedValues = ({
+  hasMediaQuery,
+}: {
+  hasMediaQuery: boolean;
+}) => {
   return (
     <div
       css={css`
@@ -37,7 +41,7 @@ export const CSSGridFixedValues = ({ hasMQ }: { hasMQ: boolean }) => {
           display: grid;
           gap: 1rem;
 
-          ${hasMQ
+          ${hasMediaQuery
             ? css`
                 @media (min-width: 800px) {
                   grid-template-columns: 400px 1fr;
@@ -52,7 +56,7 @@ export const CSSGridFixedValues = ({ hasMQ }: { hasMQ: boolean }) => {
         <Card title="aside with fixed width" />
       </div>
       {/* hello, CSSGridFixedValues!
-      {hasMQ && <div>hasMQ is true</div>} */}
+      {hasMediaQuery && <div>hasMediaQuery is true</div>} */}
     </div>
   );
 };
